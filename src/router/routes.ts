@@ -20,6 +20,7 @@ import MyAnswerPage from "@/views/answer/MyAnswerPage.vue";
 import UserInfoView from "@/views/user/UserInfoView.vue";
 import AboutView from "@/views/user/AboutView.vue";
 import BasicLayout from "@/layouts/BasicLayout.vue";
+import AppStatisticPage from "@/views/statistic/AppStatisticPage.vue";
 
 export const routes: Array<RouteRecordRaw> = [
   {
@@ -66,6 +67,14 @@ export const routes: Array<RouteRecordRaw> = [
     component: AppDetailPage,
     meta: {
       hideInMenu: true,
+    },
+  },
+  {
+    path: "/app_statistic",
+    name: "应用统计",
+    component: AppStatisticPage,
+    meta: {
+      access: ACCESS_ENUM.ADMIN,
     },
   },
   {

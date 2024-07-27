@@ -14,14 +14,18 @@
     "@bytemd/vue-next": "^1.21.0",
     "axios": "^1.6.8",
     "core-js": "^3.8.3",
+    "echarts": "^5.5.1",
     "pinia": "^2.1.7",
+    "qrcode": "^1.5.3",
     "vue": "^3.2.13",
+    "vue-echarts": "^7.0.0-beta.0",
     "vue-router": "^4.0.3",
     "vue3-calendar-heatmap": "^2.0.5",
     "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@arco-design/web-vue": "^2.55.2",
+    "@types/qrcode": "^1.5.5",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@umijs/openapi": "^1.12.1",
