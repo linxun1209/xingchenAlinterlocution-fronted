@@ -32,6 +32,21 @@ export async function aiGenerateQuestionUsingPost(
   });
 }
 
+/** aiGenerateQuestionSse POST /api/question/ai_generate/sse */
+export async function aiGenerateQuestionSseUsingPost(
+  body: API.AiGenerateQuestionRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.SseEmitter>('/api/question/ai_generate/sse', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: body,
+    ...(options || {}),
+  });
+}
+
 /** deleteQuestion POST /api/question/delete */
 export async function deleteQuestionUsingPost(
   body: API.DeleteRequest,

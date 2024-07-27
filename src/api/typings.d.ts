@@ -650,6 +650,10 @@ declare namespace API {
     userId?: number;
   };
 
+  type SseEmitter = {
+    timeout?: number;
+  };
+
   type uploadFileUsingPOSTParams = {
     biz?: string;
   };
