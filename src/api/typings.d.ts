@@ -5,6 +5,12 @@ declare namespace API {
     questionNumber?: number;
   };
 
+  type aiGenerateQuestionSseUsingGETParams = {
+    appId?: number;
+    optionNumber?: number;
+    questionNumber?: number;
+  };
+
   type App = {
     appDesc?: string;
     appIcon?: string;
@@ -708,6 +714,7 @@ declare namespace API {
   type UserAnswerAddRequest = {
     appId?: number;
     choices?: string[];
+    id?: number;
   };
 
   type UserAnswerEditRequest = {
